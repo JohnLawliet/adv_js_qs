@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questions</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron"><h1>Questions</h1></div>
+			<div class="card">
+		  		<div class="card-body">
+				    <h5 class="card-title">Question 1</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Cleaning Room</h6>
+				    <p class="card-text">
+				    	Clean the room function: given an input of [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20], make a function that organizes these into individual array that is ordered. For example answer(ArrayFromAbove) should return: [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]. Bonus: Make it so it organizes strings differently from number types. i.e. [1, "2", "3", 2] should return [[1,2], ["2", "3"]]
+				    </p>
+				    <div class="sol-box">
+				    	<h5 class="sol-title">Enter room elements</h5>
+				    	<div class="row">
+				    		<input type="text" class="form-control " placeholder="Enter array here">
+				    	</div>
+				    </div>
+				    <a href="#" class="card-link">Solution</a>
+				</div>
+			</div>
+
+			<div class="card">
+		  		<div class="card-body">
+				    <h5 class="card-title">Question 2</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Cleaning Room</h6>
+				    <p class="card-text">
+				    	Write a javascript function that takes an array of numbers and a target number. The function should find two different numbers in the array that, when added together, give the target number. For example: answer([1,2,3], 4)should return [1,3]
+				    </p>
+				    <div class="sol-box">
+				    	<h5 class="sol-title">Set an array</h5>
+				    	<div class="row">
+				    	<input type="text" class="form-control col-6" placeholder="Enter array here">
+					    <input type="text" class="form-control col-6" placeholder="Enter Target">
+				    	</div>
+				    </div>
+
+				    <a href="#" class="card-link">Solution</a>
+				</div>
+			</div>
+
+			<div class="card">
+		  		<div class="card-body">
+				    <h5 class="card-title">Question 3</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Cleaning Room</h6>
+				    <p class="card-text">
+				    	Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
+				    </p>
+				    <div class="sol-box">
+				    	<h5 class="sol-title">Choose the colours</h5>
+				    	<div class="row">
+					    	<div class="sliders col-6">
+					    		<div id="ranges">
+					    		<label for="red">Red</label>
+	          					<h5 class="col-value"> </h5>
+						        <input value="200" type="range" min="0" max="255" id="red" class="colarray" oninput="sliderChange(this.value)">
+						        </div>
+
+						        <div id="ranges">
+						        <label for="green">Green</label>
+	          					<h5 class="col-value"> </h5>
+						        <input value="200" type="range" min="0" max="255" id="green" class="colarray">
+					    		</div>
+					    		
+					    		<div id="ranges">
+					    		<label for="blue">Blue</label>
+	          					<h5 class="col-value"> </h5>
+						        <input value="200" type="range" min="0" max="255" id="blue" class="colarray">
+					    		</div>
+					    	</div>
+					    	<div class="col-6 d-flex align-items-center" id="col-sect" ><h5>aba</h5></div>
+				    	</div>		
+				    </div>
+				    
+				    <button class="btn btn-outline-info" id="sol-3">Solution</button>
+				</div>
+			</div>
+	</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="q3.js"></script>
+</body>
+</html>
